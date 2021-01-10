@@ -5,11 +5,38 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+main {
+    padding: 100px 5px;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+h2 {
+    text-align: center;
+}
+
 .nav-link a {
     text-decoration: none;
     color: cornflowerblue;
     font-weight: bold;
     font-size: 18px;
+}
+
+#title {
+    margin: 0 auto;
+    display: block;
+}
+
+#how , #features, #getStarted {
+    padding-top: 71px;
+}
+
+#logo {
+    height: 50px;
+}
+
+#header-img {
+    height: 100%
 }
 
 #header {
