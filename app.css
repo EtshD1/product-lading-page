@@ -37,10 +37,6 @@ footer h4 {
     background-position: center;
 }
 
-.laptop, .features {
-    flex: 0 0 calc(100% / 3);
-}
-
 .nav-link a {
     text-decoration: none;
     color: cornflowerblue;
@@ -76,6 +72,7 @@ footer h4 {
 .section-beginning {
     text-align: center;
     text-shadow: 1px 1px 2px #000;
+    padding-bottom: 5px;
 }
 
 .video-container {
@@ -133,7 +130,7 @@ footer h4 {
     display: flex;
 }
 
-#features {
+#features > div {
     background-color: #0000001a;
     border-radius: 8px;
     padding: 10px 15px 25px;
@@ -145,7 +142,7 @@ footer h4 {
 }
 
 #how, #features, #getStarted {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 #logo {
@@ -249,5 +246,38 @@ footer h4 {
 @media (max-width: 675px){
     .features {
         flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .nav-close {
+        display: none;
+    }
+
+    #nav-links {
+        position: static;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        border-left: none;
+        transform: translateX(0%);
+    }
+
+    #burger {
+        display: none;
+    }
+
+    #modal {
+        display: none;
+    }
+}
+
+@media (min-width: 951px) {
+    .laptop {
+        display: block;
+    }
+
+    .laptop, .features {
+        flex: 0 0 calc(100% / 3);
     }
 }
